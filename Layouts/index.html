@@ -1,0 +1,695 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6a61ecb914.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-column">
+        <img src="Capture_d_écran_2024-05-02_041936-removebg-preview.png" style="width: 120px; height: 120px;margin-top: 8px;margin-left: 30px;">
+      </div>
+      <div style="flex-grow: 2;">
+        <div class="upperborderh"></div>
+        <div class="bottomborderh"></div>
+        <div class="header">
+          <nav>
+            <ul class="menu" style="display: flex; align-items: center; justify-content: center;">
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">HOME</h1></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h2 style="font-size: 15px; color: #565455; margin: 0 10px;">ACTUALITY</h2></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">GALERIE</h1></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">RECIPES</h1></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">FOR PARENTS</h1></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">ORGANISATIONS</h1></li>
+              <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+              <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">RECOMMENDATION</h1></li>
+            </ul>
+           
+          </nav>
+        </div>
+        <div class="topborderh"></div>
+        <div class="downborderh"></div>
+      </div>
+      <div class="flex-grow"></div>
+      <li class="menu-toggle" onclick="showSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#80bd00"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+      </li>
+    </div>
+   
+    <ul class="sidebar">
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">HOME</h1></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h2 style="font-size: 15px; color: #565455; margin: 0 10px;">ACTUALITY</h2></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">GALERIE</h1></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">RECIPES</h1></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">FOR PARENTS</h1></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">ORGANISATIONS</h1></li>
+      <div class="icone" style="font-size: 5px; margin: 0 10px;"><i class="fa-solid fa-circle"></i></div>
+      <li><h1 style="font-size: 15px; color: #565455; margin: 0 10px;">RECOMMENDATION</h1></li>
+    </ul>
+  
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+  function handleResize() {
+    const menu = document.querySelector('.menu');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const viewportWidth = window.innerWidth;
+
+    if (viewportWidth <= 1400) {
+      menu.style.display = 'none';
+      menuToggle.style.display = 'block';
+    } else {
+      menu.style.display = 'flex';
+      menuToggle.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
+  handleResize(); 
+});
+
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('active');
+}
+    </script>
+    </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div style="margin-bottom: 20px">
+      <img src="download.jpg" style="margin-top: 15px; margin-left: 0px" />
+    </div>
+    <div>
+      <div class="logo" style="justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <div class="upperborder" 
+      ></div>
+        <div class="bottomborder"
+        ></div>
+      <div style="text-align: center">
+        <a style="font-size: 20px; color: #018134">OUR PROJECT</a>
+      </div>
+      <div class="topborder"></div>
+        <div class="downborder"></div>
+    </div>
+    <div style="display: flex; margin-bottom: 20px">
+      <div style="flex: 1"></div>
+      <div style="flex: 0 0 60%; display: flex; flex-direction: column">
+        <div style="flex: 1; margin-top: 40px; margin-bottom: 15px">
+          <p style="color: #797979">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum est
+            minus accusamus tenetur eius, libero natus, temporibus illum
+            voluptatum praesentium porro sequi consequatur asperiores eaque
+            dolore odit quas eligendi corrupti?Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Quo earum deserunt eligendi architecto
+            similique in, temporibus quidem possimus unde incidunt recusandae
+            ipsum eum ipsam facilis cumque error ad repellendus id?Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Aspernatur velit quia
+            iusto, veniam commodi quo rerum? Nesciunt atque quod dolorem maxime
+            harum consequatur optio commodi? Nemo quis dicta odit reiciendis.
+          </p>
+        </div>
+        <div class="icone" style="justify-content: center; font-size: 28px">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+      <div style="flex: 1"></div>
+    </div>
+
+    <div class="class" >
+      <div class="logo" style="background-color: #f5f5f5;justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+  <div class="upperborder"style="background-color: #f5f5f5;"></div>
+  <div class="bottomborder"style="background-color: #f5f5f5;"></div>
+  <div style="text-align: center; background-color: #f5f5f5">
+    <a style="font-size: 20px; color: #018134">ACTUALITY</a>
+  </div>
+  <div class="topborder"></div>
+  <div class="downborder"></div>
+  <div style="display: flex">
+    <div style="flex: 1; background-color: #f5f5f5"></div>
+  </div>
+        <div class="content">
+          <div class="row"style=" background-color: #f5f5f5;">
+            <div class="row" style=" background-color: #f5f5f5;">
+              <img
+                src="1.jpg"
+                class="image"
+              />
+            </div>
+            <div style="flex: 1">
+              <p class="p">Title</p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam enim id voluptate aspernatur fuga doloremque earum aut,
+                repellat expedita dolorum
+              </p>
+              <div class="icone" style="font-size: 18px">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div style="flex: 1">
+              <img
+                src="2.jpg"
+                class="image"
+              />
+            </div>
+            <div style="flex: 1">
+              <p
+              class="p"
+              >
+                Title
+              </p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam enim id voluptate aspernatur fuga doloremque earum aut,
+                repellat expedita dolorum
+              </p>
+              <div class="icone" style="font-size: 18px">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              style="
+                flex: 1;
+                background-color: #f5f5f5;
+                padding: 0;
+                margin-left: 20px;
+              "
+            >
+              <p
+               class="p"
+              >
+                Title
+              </p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam enim id voluptate aspernatur fuga doloremque earum aut,
+                repellat expedita dolorum
+              </p>
+              <div class="icone" style="font-size: 18px">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1;
+                background-color: #f5f5f5;
+                padding: 0;
+                margin-bottom: 40px;
+              "
+            >
+              <img
+                src="images.jpg"
+                class="image"
+              />
+            </div>
+
+            <div style="flex: 1; margin-left: 15px">
+              <p
+              class="p"
+              >
+                Title
+              </p>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam enim id voluptate aspernatur fuga doloremque earum aut,
+                repellat expedita dolorum
+              </p>
+              <div class="icone" style="font-size: 18px">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div style="flex: 1">
+              <img
+                src="3.jpg"
+                class="image"
+              />
+            </div>
+          </div>
+          <div class="icone" style="justify-content: center; font-size: 28px">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div style="flex: 1"></div>
+      </div>
+    </div>
+    <div >
+      <div class="logo" style="justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+      <div class="upperborder" ></div>
+        <div class="bottomborder" ></div>
+      <div style="text-align: center">
+        <a style="font-size: 20px; color: #018134">WORKSHOP PROFILE</a>
+      </div>
+      <div class="topborder" ></div>
+        <div class="downborder" ></div>
+    </div>
+    <div class="container1">
+      <div class="side1"></div>
+      <div class="content1">
+        <div class="row1">
+          <div class="text">
+            <h1>text:</h1>
+          </div>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id.</p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="text">
+            <h1>text:</h1>
+          </div>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id.</p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="text">
+            <h1>text:</h1>
+          </div>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id.</p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="text">
+            <h1>text:</h1>
+          </div>
+          <div class="paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id.</p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="text">
+            <h1>text:</h1>
+          </div>
+          <div class="paragraph">
+            <h1>LOREM LOREM</h1>
+          </div>
+        </div>
+      </div>
+      <div class="side1"></div>
+    </div>
+    
+   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div
+      style="
+        border-bottom: 2px solid #007e27;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+      "
+    ></div>
+    <div
+      style="
+        border-top: 10px solid #80bd00;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    ></div>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div class="class" style=" background-color: #ffffff">
+      <div class="logo" style="justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <div class="upperborder" ></div>
+      <div class="bottomborder" ></div>
+      <div style="text-align: center; background-color: #ffffff">
+        <a style="font-size: 20px; color: #018134">GALERIE</a>
+      </div>
+      <div class="topborder" ></div>
+        <div class="downborder" ></div>
+        <div class="container2">
+          <div class="row2">
+              <div class="item">
+                  <img src="11.jpg" alt="Image 11">
+              </div>
+              <div class="item">
+                  <img src="12.jpg" alt="Image 12">
+              </div>
+              <div class="item">
+                  <img src="13.jpg" alt="Image 13">
+              </div>
+          </div>
+          <div class="row2">
+              <div class="item">
+                  <img src="14.jpg" alt="Image 14">
+              </div>
+              <div class="item">
+                  <img src="15.jpg" alt="Image 15">
+              </div>
+              <div class="item">
+                  <img src="16.jpg" alt="Image 16">
+              </div>
+          </div>
+      </div>
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div class="RECIPES" style="margin-bottom: 40px;">
+      <div class="RECIPES" style="margin-bottom: 40px;">
+        <div  style="background-color: transparent;display: flex;color :#ffffff;justify-content: center; font-size: 28px;padding-bottom: 0;">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div
+         class="topwhite"
+        ></div>
+        <div
+     class="downwhite"
+        ></div>        
+        <div style="text-align: center;"> <!-- Div pour le texte "RECIPES" -->
+          <a style="font-size: 20px; color: #ffffff;">RECIPES</a>
+        </div>
+        
+        <div
+         class="topwhite"
+        ></div>
+        <div
+          class="downwhite"
+        ></div>
+        <div style="display: flex;background-color: transparent;margin-bottom: 40px;"> 
+          <div style="flex: 1;background-color: transparent;"></div>
+          <div style="background-color: transparent;flex: 0 0 75%; display: flex; flex-direction: column;">
+              <div style="display: flex;background-color: transparent;margin-top: 10px;">
+                  <div style="background-color: transparent;flex: 1;text-align: center;padding-top: 2px;padding-bottom: 2px;font-size: 60px;">
+                      <i class="fa-solid fa-stroopwafel" style="color: #ffffff;"></i>
+                      <p style="color: #ffffff;margin-top: 10px;font-size: 30px;padding-left: 10px;">Texte 1</p> 
+                  </div>
+                  <div style="flex: 1;text-align: center;margin-bottom: 10px;font-size: 60px;">
+                      <i class="fa-solid fa-apple-whole" style="color: #ffffffff;"></i>
+                      <p style="color: #ffffff;margin-top: 10px;font-size: 30px;padding-left: 10px;">Texte 2</p> 
+                  </div>
+                  <div style="flex: 1;text-align: center;margin-bottom: 10px;font-size: 60px">
+                      <i class="fa-solid fa-bowl-food" style="color: #ffffffff;"></i>
+                      <p style="color: #ffffff;margin-top: 10px;font-size: 30px;padding-left: 10px;">Texte 3</p> 
+                  </div>
+                  <div style="flex: 1;text-align: center;margin-bottom: 10px;font-size: 60px">
+                      <i class="fa-solid fa-plate-wheat" style="color: #ffffff;"></i>
+                      <p style="color: #ffffff;margin-top: 10px;font-size: 30px;padding-left: 10px;">Texte 4</p> 
+                  </div>
+              </div>
+          </div>
+          <div style="flex: 1;margin-bottom: 40px;"></div>
+      </div>
+      
+    </div>
+    <div style="margin-bottom: 50px;background-color: #ffffff;"></div>
+    <div class="class" >
+      <div class="logo" style="background-color: #f5f5f5;justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+       <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+      <div class="upperborder" style="background-color: #f5f5f5;"></div>
+      <div class="bottomborder" style="background-color: #f5f5f5;"></div>
+      <div style="text-align: center; background-color: #f5f5f5">
+        <a style="font-size: 20px; color: #018134">FOR PARENTS</a>
+      </div>
+      <div class="topborder" style="background-color: #f5f5f5;"></div>
+        <div class="downborder" style="background-color: #f5f5f5;"></div>
+        <div id="container3" style="display: flex">
+          <div style="flex: 1; background-color: #f5f5f5"></div>
+        
+          <div
+            style="
+              flex: 0 0 70%;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 40px;
+            "
+          >
+            <div class="text-block" style="display: flex; background-color: #f5f5f5">
+              <div style="flex: 1; background-color: #f5f5f5; padding: 0">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id voluptate aspernatur fuga
+                </p>
+              </div>
+              <div style="flex: 1">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  aspernatur fuga doloremque earum aut, repellat expedita dolorum
+                </p>
+              </div>
+              <div style="flex: 1">
+                <p style="color: #018134; margin-bottom: 20px; margin-left: 20px">+</p>
+                <p style="color: #888888; margin-left: 30px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <p style="color: #018134; margin-bottom: 20px">+</p>
+            </div>
+            <div class="text-block" style="display: flex; background-color: #f5f5f5">
+              <div style="flex: 1; background-color: #f5f5f5; padding: 0; margin-left: 20px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Quisquam enim id voluptate aspernatur fuga doloremque earum aut, repellat expedita dolorum
+                </p>
+              </div>
+        
+              <div style="flex: 1; background-color: #f5f5f5; padding: 0; margin-bottom: 40px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id
+                </p>
+              </div>
+        
+              <div style="flex: 1; margin-left: 15px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <p style="color: #018134; margin-bottom: 20px">+</p>
+            </div>
+            <div class="text-block" style="display: flex; background-color: #f5f5f5">
+              <div style="flex: 1; background-color: #f5f5f5; padding: 0; margin-left: 20px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim id voluptate aspernatur
+                </p>
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+              </div>
+              <div style="flex: 1; background-color: #f5f5f5; padding: 0; margin-bottom: 40px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+              </div>
+        
+              <div style="flex: 1; margin-left: 15px">
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+                <p style="color: #888888; margin-left: 20px">
+                  Lorem ipsum dolor sit amet consectetur
+                </p>
+                <p style="color: #018134; margin-bottom: 20px">+</p>
+              </div>
+              <p style="color: #018134; margin-bottom: 20px">+</p>
+            </div>
+          </div>
+        
+          <div style="flex: 1"></div>
+        </div>
+    </div> 
+   <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div
+      style="
+        border-bottom: 2px solid #007e27;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      "
+    ></div>
+    <div
+      style="
+        border-top: 10px solid #80bd00;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    ></div>
+     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div >
+      <div class="logo" style="justify-content: center; font-size: 28px;padding-bottom: 0;">
+        <i class="fa-solid fa-leaf"></i>
+      </div>
+      <div class="upperborder" ></div>
+        <div class="bottomborder" ></div>
+      <div style="text-align: center">
+        <a style="font-size: 20px; color: #018134">ORGANISATIONS</a>
+      </div>
+      <div class="topborder"></div>
+        <div class="downborder"></div>
+        <div style="display: flex">
+          <div style="flex: 1;"></div>
+        
+          <div
+            style="
+              flex: 0 0 70%;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+            "
+          >
+            <div style="display: flex;">
+              <div style="flex: 1; padding: 0">
+                <h1 class="responsive-texte1">
+                  Organisations
+                </h1>
+              </div>
+              <div style="flex: 1;">
+                <h1 class="responsive-texte1">
+                  Patrons
+                </h1>
+              </div>
+              <div style="flex: 1">
+                <h1 class="responsive-texte1">
+                  Sponsors
+                </h1>
+              </div>
+            </div>
+            <div style="display: flex;">
+              <div
+                style="
+                  flex: 1;
+                  padding: 0;
+                  margin-left: 20px;
+                "
+              >
+                <div
+                  style="
+                    padding: 0;
+                    background-color: #ffffff;
+                    margin-right: 15px;
+                    margin-left: 20px;
+                  "
+                >
+                  <img src="Capture d'écran 2024-05-02 041936.png" class="responsive-img1">
+                  <img src="lidl9991.jpg" class="responsive-img1">
+                </div>
+              </div>
+              <div
+                style="
+                  flex: 1;
+                  padding: 0;
+                  margin-bottom: 10px;
+                "
+              >
+                <div
+                  style="
+                    padding: 0;
+                    background-color: #ffffff;
+                    margin-right: 15px;
+                    margin-left: 20px;
+                  "
+                >
+                  <img src="auchan.png" class="responsive-img1">
+                  <img src="cristalline.jpg" class="responsive-img1">
+                </div>
+              </div>
+        
+              <div style="flex: 1; margin-left: 15px">
+                <div
+                  style="
+                    padding: 0;
+                    background-color: #ffffff;
+                    margin-right: 15px;
+                    margin-left: 20px;
+                  "
+                >
+                  <img src="nestle.jpg" class="responsive-img1">
+                </div>
+              </div>
+            </div>
+            <div style="display: flex;"></div>
+          </div>
+        
+          <div style="flex: 1"></div>
+        </div>
+      
+        
+    </div>
+     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div
+      style="
+        border-bottom: 2px solid #007e27;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      "
+    ></div>
+    <div
+      style="
+        border-top: 10px solid #80bd00;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+      "
+    ></div>
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <div style="display: flex; background-color: #f5f5f5;">
+      <div style="flex: 1; background-color: #f5f5f5;"></div>
+      
+      <div style="flex: 0 0 70%; display: flex; flex-direction: column; margin-bottom: 40px; background-color: #f5f5f5;">
+        <div style="display: flex; background-color: #f5f5f5;">
+          
+          <!-- Colonne 1 -->
+          <div style="flex: 1; display: flex; justify-content: center; align-items: center; padding-top: 10px; background-color: #f5f5f5;">
+            <div style="border-top: 2px solid #007e27; border-bottom: 2px solid #007e27; padding: 10px; margin-top: 10px;background-color: #f5f5f5;">
+              <img src="aa-removebg-preview.png" style="width: 30px; height: 30px; display: inline-block;background-color: #f5f5f5;">
+              <img src="ll.png" style="width: 30px; height: 30px; display: inline-block;background-color: #f5f5f5;">
+            </div>
+          </div>
+          
+          <!-- Colonne 2 -->
+          <div style="flex: 1; display: flex; justify-content: center; align-items: center; background-color: #f5f5f5;">
+            <div style="background-color: #f5f5f5;">
+              <img src="Capture_d_écran_2024-05-02_041936-removebg-preview.png" style="width: 100px; height: 100px; display: inline-block;background-color: #f5f5f5;">
+            </div>
+          </div>
+          
+          <!-- Colonne 3 -->
+          <div style="flex: 1; display: flex; justify-content: center; align-items: center; padding-top: 10px; background-color: #f5f5f5;">
+            <div style="border-top: 2px solid #007e27; border-bottom: 2px solid #007e27; padding: 10px; margin-top: 10px;background-color: #f5f5f5;">
+              <img src="nn.jpg" style="width: 30px; height: 30px; display: inline-block;background-color: #f5f5f5;">
+              <img src="qq.png" style="width: 30px; height: 30px; display: inline-block;background-color: #f5f5f5;">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div style="flex: 1; background-color: #f5f5f5;"></div>
+    </div>
+    
+  <div style="background-color: #f5f5f5;border-bottom: 40px solid #007e27; padding: 10px 0; margin-left: auto; margin-right: auto;"></div>
+  
+  </body>
+</html>
